@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://pennywise:pennywisefyp@cluster0.cobrj.mongodb.net/pennywise?retryWrites=true&w=majority&appName=Cluster0')
+require('dotenv').config();
+mongoose.connect(process.env.MONGODB_URI)
 .then(async () => {
   const Product = require('./src/models/Product');
   const products = await Product.find({}, 'name status master_product_id').lean();
