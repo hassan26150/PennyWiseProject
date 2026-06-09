@@ -5,6 +5,7 @@ node_modules/
 **/node_modules/
 
 .env
+scraper-service/.env
 backend/.env
 .env.local
 .env.*.local
@@ -35,3 +36,6 @@ coverage/
 
 # Git metadata (safety)
 *.orig
+# python cache
+__pycache__/
+*.pyc
