@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\components",
+    "\\components\\buyer",
+    "\\components\\figma",
+    "\\components\\seller",
+    "\\public"
+  ],
+  "SelectedNode": "\\components\\buyer\\ChatbotSearch.tsx",
+  "PreviewInSolutionExplorer": false
+}

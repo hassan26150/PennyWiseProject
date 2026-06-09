@@ -1,0 +1,35 @@
+# ======================
+# GLOBAL
+# ======================
+node_modules/
+**/node_modules/
+
+.env
+.env.local
+.env.*.local
+
+dist/
+build/
+out/
+
+logs/
+*.log
+
+.DS_Store
+Thumbs.db
+
+*.zip
+
+# ======================
+# FRONTEND (React / Expo / RN)
+# ======================
+.expo/
+.expo-shared/
+web-build/
+
+# ======================
+# BACKEND (Node.js)
+# ======================
+coverage/
+
+

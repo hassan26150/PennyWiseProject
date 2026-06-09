@@ -1,0 +1,94 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+    --font-size: 16px;
+    /* Core colors */
+    --background: #F4F4F4;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+    /* Teal palette only */
+    --primary: #005461;
+    --primary-foreground: #ffffff;
+    --secondary: #018790;
+    --secondary-foreground: #ffffff;
+    --accent: #00B7B5;
+    --accent-foreground: #003b42;
+    --muted: #e6f3f3;
+    --muted-foreground: #5f6f73;
+    /* REMOVE RED – use teal instead */
+    --destructive: #018790;
+    --destructive-foreground: #ffffff;
+    --border: rgba(0, 84, 97, 0.15);
+    --input: transparent;
+    --input-background: #ffffff;
+    --switch-background: #cfeeee;
+    --ring: #00B7B5;
+    --radius: 0.75rem;
+    /* Brand */
+    --brand-primary: #005461;
+    --brand-secondary: #018790;
+    --brand-accent: #00B7B5;
+    --brand-success: #00B7B5;
+    --brand-bg: #F4F4F4;
+}
+
+/* ?? DARK MODE (TEAL ONLY) */
+.dark {
+    --background: #0b2f36;
+    --foreground: #e6f6f6;
+    --card: #0f3f49;
+    --card-foreground: #e6f6f6;
+    --popover: #0f3f49;
+    --popover-foreground: #e6f6f6;
+    --primary: #00B7B5;
+    --primary-foreground: #003b42;
+    --secondary: #018790;
+    --secondary-foreground: #ffffff;
+    --accent: #00B7B5;
+    --accent-foreground: #003b42;
+    --muted: #144f5b;
+    --muted-foreground: #b6e5e5;
+    /* No red in dark mode either */
+    --destructive: #00B7B5;
+    --destructive-foreground: #003b42;
+    --border: rgba(0, 183, 181, 0.25);
+    --input: #144f5b;
+    --ring: #00B7B5;
+}
+
+/* Theme bindings */
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-input-background: var(--input-background);
+    --color-switch-background: var(--switch-background);
+    --color-ring: var(--ring);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-brand-primary: var(--brand-primary);
+    --color-brand-secondary: var(--brand-secondary);
+    --color-brand-accent: var(--brand-accent);
+    --color-brand-success: var(--brand-success);
+    --color-brand-bg: var(--brand-bg);
+}
